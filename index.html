@@ -1175,7 +1175,7 @@
     <!-- LOGIN SIDA -->
     <div id="login-sida" class="scandi-container">
         <h1 class="scandi-title">MAX MARTYN 30</h1>
-        <p class="scandi-subtitle">2 MAY 2026</p>
+        <p class="scandi-subtitle">9 MAY 2026</p>
         <div style="text-align: center;">
             <span class="restricted-badge">RESTRICTED ACCESS</span>
         </div>
@@ -1189,14 +1189,14 @@
         <h1 class="scandi-title">You already said <span style="color: #DC2626;">NO</span></h1>
         <p class="scandi-subtitle" style="margin-bottom: 30px;">Changed your mind?</p>
         <button onclick="ändraTillJa()" class="scandi-button" style="background: #00FF88; color: #000;">CHANGE TO YES</button>
-        <button onclick="stayNo()" class="scandi-button scandi-button-secondary" style="margin-top: 15px;">STILL CAN'T COME</button>
+        <button onclick="stayNo()" class="scandi-button scandi-button-secondary" style="margin-top: 15px;" onmouseover="this.style.borderColor='#DC2626'; this.style.color='#DC2626'; this.style.background='rgba(220, 38, 38, 0.1)'" onmouseout="this.style.borderColor='#2a2a2a'; this.style.color='#E0E0E0'; this.style.background='transparent'">STILL CAN'T COME</button>
     </div>
 
     <!-- JA/NEJ SIDA -->
     <div id="ja-nej-sida" class="scandi-container hidden">
         <h1 class="scandi-title">Welcome</h1>
         <p class="scandi-subtitle" id="gast-namn" style="font-size: 1.2em; margin-bottom: 30px;"></p>
-        <p class="scandi-subtitle">2 MAY 2026</p>
+        <p class="scandi-subtitle">9 MAY 2026</p>
         <p style="color: #888; text-align: center; margin-bottom: 30px;">Confirm your attendance:</p>
         <button onclick="svarJa()" class="scandi-button">YES</button>
         <button onclick="svarNej()" class="scandi-button scandi-button-secondary">NO</button>
@@ -1209,10 +1209,10 @@
         <div class="masthead">
             <div class="show-badge">SPECIAL BROADCAST</div>
             <div class="masthead-title">MAX MARTYN 30</div>
-            <div class="masthead-subtitle">Spring Party • Tie Required</div>
+            <div class="masthead-subtitle">Spring Party • <span style="color: #00FF88; text-shadow: 0 0 10px rgba(0, 255, 136, 0.6), 0 0 20px rgba(0, 255, 136, 0.3); font-weight: 700;">The Martyn Show</span></div>
             <div class="masthead-meta">
                 <span>GOTHENBURG, SWEDEN</span>
-                <span class="masthead-meta-accent">LIVE • 2 MAY 2026</span>
+                <span class="masthead-meta-accent">LIVE • 9 MAY 2026</span>
                 <span>EST. 1996</span>
             </div>
         </div>
@@ -1235,7 +1235,7 @@
                     <div class="info-box-title">Schedule</div>
                     <div class="info-row">
                         <span class="info-label">Date</span>
-                        <span class="info-value">2 May 2026</span>
+                        <span class="info-value">9 May 2026</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">Time</span>
@@ -1262,7 +1262,7 @@
                             <div class="dresscode-text">
                                 <p style="margin-bottom: 12px;"><strong>Mandatory:</strong> Tie required for entry. No tie equals no entry.</p>
                                 <p style="margin-bottom: 12px;"><strong>Style:</strong> Your interpretation. Classic, creative, ridiculous—all acceptable.</p>
-                                <p><strong>Why:</strong> Because I said so. It's my 30th.</p>
+                                <p><strong>Why:</strong> Because I'm finally an adult.</p>
                             </div>
                         </div>
                     </div>
@@ -1282,15 +1282,13 @@
                 <div class="section-text">
                     <p><strong>The Story:</strong> I turned 30 earlier this year. Tired of celebrating my birthday in winter, so we're doing it in spring instead!</p>
                     
-                    <p><strong>The Theme:</strong> Ties mandatory. No exceptions. I want creative interpretations.</p>
+                    <p><strong>The Theme:</strong> Tie is mandatory for every guest. No exceptions. I want creative interpretations.</p>
                     
-                    <p><strong>The Entertainment:</strong> I'm hosting a live show with challenges and quality chaos. Plus free mingling throughout the night.</p>
+                    <p><strong>The Flow:</strong> Doors open at 16:00 on the rooftop (Sjupundsgatan 13). Grills available - bring your own food to grill, or grab food from the pizza/sushi spots downstairs. Come full or hungry, but definitely thirsty. Around 19:00-20:00 we move down to the lounge for <span style="color: #00FF88; text-shadow: 0 0 10px rgba(0, 255, 136, 0.6), 0 0 20px rgba(0, 255, 136, 0.3); font-weight: 700;">The Martyn Show</span>. Afterparty continues at my apartment (Sjupundsgatan 41) until late.</p>
                     
                     <p><strong>Drinks:</strong> Bring your own. Welcome drink provided plus some spirits. BYOB everything else.</p>
                     
-                    <p><strong>Photos:</strong> Entrance photos of the venue and apartment are in the photo gallery. Upload your party photos there after the event. Let's see and share the memories!</p>
-                    
-                    <p><strong>The Venues:</strong> Main party at The Lounge, Sjupundsgatan 13. Afterparty continues at my apartment, Sjupundsgatan 41. Rooftop access weather dependent.</p>
+                    <p><strong>Photos:</strong> Upload your party photos to the gallery after the event. Let's see and share the memories!</p>
                 </div>
             </div>
 
@@ -2045,8 +2043,8 @@
         }
 
         function uppdateraCountdown() {
-            const festDatum = new Date('2026-05-02T16:00:00');
-            const festSlut = new Date('2026-05-03T03:00:00'); // Party ends 3 AM
+            const festDatum = new Date('2026-05-09T16:00:00');
+            const festSlut = new Date('2026-05-10T03:00:00'); // Party ends 3 AM
             
             function updateCounter() {
                 const nu = new Date();
@@ -2121,14 +2119,14 @@
             const title = 'Max Martyn 30 - Birthday Party';
             const details = 'Max\'s 30th birthday celebration. Tie mandatory for entry. Entertainment and afterparty included. Location: The Lounge, Sjupundsgatan 13 + afterparty at Sjupundsgatan 41';
             const location = 'Sjupundsgatan 13, Gothenburg';
-            const startDate = '20260502T160000';
-            const endDate = '20260503T030000';
+            const startDate = '20260509T160000';
+            const endDate = '20260510T030000';
             
             const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
             document.getElementById('google-calendar').href = googleCalUrl;
             
-            const outlookStart = '2026-05-02T16:00:00';
-            const outlookEnd = '2026-05-03T03:00:00';
+            const outlookStart = '2026-05-09T16:00:00';
+            const outlookEnd = '2026-05-10T03:00:00';
             const outlookCalUrl = `https://outlook.office.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(title)}&startdt=${outlookStart}&enddt=${outlookEnd}&body=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&path=/calendar/action/compose&rru=addevent`;
             document.getElementById('outlook-calendar').href = outlookCalUrl;
         }
@@ -2200,6 +2198,23 @@
             const files = event.target.files;
             if (!files || files.length === 0) return;
 
+            // Check pending photo limit (10 per user)
+            const allPendingPhotos = await getFromFirebase('photosPending') || [];
+            const myPendingPhotos = allPendingPhotos.filter(p => p.name === (nuvarandeGast ? nuvarandeGast.namn : 'Guest'));
+            
+            if (myPendingPhotos.length >= 10) {
+                alert('⚠️ You have 10 photos waiting for approval. Please wait for admin to approve some before uploading more.');
+                event.target.value = '';
+                return;
+            }
+            
+            const remainingSlots = 10 - myPendingPhotos.length;
+            if (files.length > remainingSlots) {
+                alert(`⚠️ You can only upload ${remainingSlots} more photo${remainingSlots === 1 ? '' : 's'} (10 pending limit). Please wait for approval before uploading more.`);
+                event.target.value = '';
+                return;
+            }
+
             // Show uploading message
             const uploadButton = event.target.parentElement;
             const originalHTML = uploadButton.innerHTML;
@@ -2241,7 +2256,8 @@
             
             if (uploadedCount > 0) {
                 const photoWord = uploadedCount === 1 ? 'photo' : 'photos';
-                alert(`${uploadedCount} ${photoWord} submitted! Waiting for admin approval.`);
+                const remaining = 10 - (myPendingPhotos.length + uploadedCount);
+                alert(`${uploadedCount} ${photoWord} submitted! You can upload ${remaining} more (10 pending limit).`);
                 showPendingCount();
             } else {
                 alert('Failed to upload photos. Please try again.');
