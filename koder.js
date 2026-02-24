@@ -37,5 +37,6 @@ const gaster = {
     "FEST-PS86V": { namn: "Phil Slater", kommer: null },
     "FEST-EJ49U": { namn: "Emelie Junkala", kommer: null },
     "FEST-NR47Q": { namn: "Nohelia Rocha", kommer: null },
+    "FEST-MM30X": { namn: "Max Martyn", kommer: null },
     "TEST": { namn: "Test", kommer: null }
 };
