@@ -2050,7 +2050,7 @@
                 const nu = new Date();
                 const skillnad = festDatum - nu;
                 const timmar = Math.floor(skillnad / (1000 * 60 * 60));
-                const dagar = Math.ceil(skillnad / (1000 * 60 * 60 * 24));
+                const dagar = Math.floor(skillnad / (1000 * 60 * 60 * 24));
                 
                 const countdownEl = document.getElementById('countdown-number');
                 const labelEl = document.querySelector('.countdown-label');
@@ -2112,7 +2112,20 @@
             }
             
             updateCounter();
-            setInterval(updateCounter, 60000); // Update every minute
+            // Update every hour to keep it fresh
+            setInterval(updateCounter, 3600000); // 1 hour = 3600000ms
+            
+            // Also update at midnight each day
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            const msUntilMidnight = tomorrow - now;
+            
+            setTimeout(() => {
+                updateCounter();
+                setInterval(updateCounter, 86400000); // Then every 24h
+            }, msUntilMidnight);
         }
 
         function skapaKalenderLankar() {
